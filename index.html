@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Vault & Hub</title>
+  <style>
+    /* Cozy, warm background and modern reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: #f6f1eb;
+      color: #3e3228;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Main cozy card container */
+    .card {
+      background-color: #fffdfa;
+      border: 1px solid #e2d9cd;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(62, 50, 40, 0.05);
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #2c221e;
+      margin-bottom: 8px;
+      font-weight: normal;
+    }
+
+    p.subtitle {
+      font-style: italic;
+      color: #7a6b5d;
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+
+    /* List of reading events */
+    .reading-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Link styling */
+    .comic-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      background-color: #f3ece4;
+      color: #3e3228;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .comic-link:hover {
+      background-color: #e8ded2;
+      border-color: #d1c2b0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .arrow {
+      font-family: sans-serif;
+      font-size: 1.1rem;
+      color: #8c735c;
+    }
+
+    footer {
+      margin-top: 36px;
+      font-size: 0.85rem;
+      color: #a39587;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <div class="icon">📚☕</div>
+    <h1>Comic Reading Nook</h1>
+    <p class="subtitle">Grab a drink, settle in, and explore the reading orders.</p>
+
+    <ul class="reading-list">
+      <li>
+        <a href="WorldWarHulk_CompleteEvent.html" class="comic-link">
+          <span>World War Hulk (Complete Event)</span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      Curated by DrBorg
+    </footer>
+  </main>
+
+</body>
+</html>
