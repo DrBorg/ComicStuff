@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DC's Absolute Universe – Reading Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #7fd65c;
+        }
+        dt {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        dt a {
+            color: #4db8ff;
+            text-decoration: none;
+        }
+        dt a:hover {
+            text-decoration: underline;
+        }
+        dt input[type="checkbox"] {
+            transform: scale(1.3);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .infobox {
+            max-width: 600px;
+            background:#1a1a1a;
+            padding:20px;
+            border-left:4px solid #7fd65c;
+            border-radius:6px;
+            margin-bottom:40px;
+        }
+        .reset-btn {
+            background:#7fd65c;
+            color:#111;
+            padding:10px 20px;
+            border:none;
+            border-radius:6px;
+            font-size:1em;
+            cursor:pointer;
+            margin-bottom:20px;
+        }
+        footer {
+            margin-top: 60px;
+            color:#888;
+            font-size:0.9em;
+            border-top:1px solid #333;
+            padding-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+        <footer>
+        <strong>Sources Used:</strong><br>
+        https://www.readingorders.com/reading-orders/absolute-universe<br>
+    </footer>
+
+    <!-- Checkbox Saving Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("input[type='checkbox']").forEach(cb => {
+                const saved = localStorage.getItem(cb.id);
+                cb.checked = saved === "true";
+
+                cb.addEventListener("change", () => {
+                    localStorage.setItem(cb.id, cb.checked);
+                });
+            });
+        });
+
+        function resetAll() {
+            document.querySelectorAll("input[type='checkbox']").forEach(cb => {
+                cb.checked = false;
+                localStorage.removeItem(cb.id);
+            });
+        }
+    </script>
+</body>
