@@ -7,12 +7,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #eee;
+            background-color: #0B0C10;
+            color: #EFC041;
             margin: 40px;
         }
         h1, h2 {
-            color: #7fd65c;
+            color: #DC3D46;
         }
         dt {
             display: flex;
@@ -20,7 +20,7 @@
             margin-bottom: 8px;
         }
         dt a {
-            color: #4db8ff;
+            color: #EFC041;
             text-decoration: none;
         }
         dt a:hover {
@@ -36,14 +36,23 @@
         }
         .infobox {
             max-width: 600px;
-            background:#1a1a1a;
+            background:#1F2833;
             padding:20px;
-            border-left:4px solid #7fd65c;
+            border-left:4px solid #EFC041;
+            border-radius:6px;
+            margin-bottom:20px;
+        }
+        .infobox2 {
+            max-width: 600px;
+            background:#1F2833;
+            padding:5px;
+            padding-left:20px;
+            border-left:4px solid #EFC041;
             border-radius:6px;
             margin-bottom:40px;
         }
         .reset-btn {
-            background:#7fd65c;
+            background:#EFC041;
             color:#111;
             padding:10px 20px;
             border:none;
@@ -54,18 +63,405 @@
         }
         footer {
             margin-top: 60px;
-            color:#888;
+            color:#8A8D93;
             font-size:0.9em;
-            border-top:1px solid #333;
+            border-top:1px solid #8A8D93;
             padding-top:20px;
         }
+        .info-icon {
+            display: inline-block;
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #8FA3A6;
+            color: #111;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 16px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            position: absolute;
+            top: 22px;
+            left: 0;
+            background: #222;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            width: 220px;
+            z-index: 10;
+        }
+
+        .info-icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
     </style>
 </head>
 
 <body>
-        <footer>
+
+    <h1>DC's Absolute Universe – Reading Order</h1>
+
+    <button class="reset-btn" onclick="resetAll()">Reset All Read Status</button>
+
+    <div class="infobox">
+        <h3 style="margin:0; color:#EFC041; font-size:1.3em;">Recommended: Use an ad‑blocker to prevent pop‑ups</h3>
+        <p style="margin-top:10px; color:#ccc; font-size:1em; line-height:1.5;">
+            For a smoother reading experience, install an ad‑blocker.  
+            I personally use <strong>uBlock Origin</strong> on PC and on Firefox Mobile — it’s lightweight, free, and works extremely well.
+        </p>
+    </div>
+
+    <div class="infobox2">
+        <p style="margin-top:10px; color:#ccc; font-size:1em; line-height:1.5;">
+            Click the header of each volume to navigate to the chapter list in <strong>Batcave.biz</strong> 
+            <br> <br> *Except for the Absolute Universe Launch Entries.
+            <br> <br> *Follow <a href="https://www.comicbookherald.com/reading-dc-comics/dc-absolute-universe-reading-order/" target="_blank" rel="noopener noreferrer">Comic Book Herald</a> for the most up to date Absolute Reading Order.
+        </p>
+    </div>
+
+    <!-- ABSOLUTE UNIVERSE LAUNCH -->
+    <div class="section">
+        <h2>Absolute Universe Launch</a></h2>
+        <dl>
+            <dt>
+                <input type="checkbox" id="comic-1">
+
+                <a href="https://batcave.biz/reader/33045/233578" target="_blank" rel="noopener noreferrer">
+                    DC All In Special
+                </a>
+
+                <span class="info-icon">i
+                    <span class="tooltip">
+                        This issue ties into the DC All In event and sets up several crossover threads.
+                    </span>
+                </span>
+            </dt>
+            <dt>
+                <input type="checkbox" id="comic-2">
+
+                <a href="https://batcave.biz/reader/35372/253065" target="_blank" rel="noopener noreferrer">
+                    FCBD25: DC All In Special Edition #1 ( Read after BM, WW, SM vol. 1 )
+                </a>
+
+                <span class="info-icon">i
+                    <span class="tooltip">
+                        "There’s a short story in the FCBD special that teases what’s to come in an eventual Absolute Universe event connecting back to the All in Special that kicked things off." - Comic Book Herald
+                    </span>
+                </span>
+            </dt>
+            <dt>
+                <input type="checkbox" id="comic-3">
+
+                <a href="https://batcave.biz/reader/35372/253065" target="_blank" rel="noopener noreferrer">
+                    Absolute Evil #1 ( Read After reading All Vol. 1 stories )
+                </a>
+
+                <span class="info-icon">i
+                    <span class="tooltip">
+                        "Absolute Evil is an essential one-shot interlude setting the stage for what’s to come in the back half of 2025 and the Absolute Universe of 2026. 
+                        As you’d expect from the title, writer Al Ewing and artist Giuseppe Camuncoli put the focus on some of the core villains of the Absolute-Verse, Joker, Ras Al Ghul, Dr. Thawne, Veronica Cale and Hector Hammond." - Comic Book Herald
+                    </span>
+                </span>
+            </dt>            
+        </dl>
+    </div>
+
+    <!-- BATMAN VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33051-absolute-batman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Batman Vol. 1: The Zoo</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-4">Absolute Batman #1</dt>
+            <dt><input type="checkbox" id="comic-5">Absolute Batman #2</dt>
+            <dt><input type="checkbox" id="comic-6">Absolute Batman #3</dt>
+            <dt><input type="checkbox" id="comic-7">Absolute Batman #4</dt>
+            <dt><input type="checkbox" id="comic-8">Absolute Batman #5</dt>
+            <dt><input type="checkbox" id="comic-9">Absolute Batman #6</dt>
+        </dl>
+    </div>
+
+    <!-- WONDER WOMAN VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33091-absolute-wonder-woman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Wonder Woman Vol. 1: The Last Amazon</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-10">Absolute Wonder Woman #1</dt>
+            <dt><input type="checkbox" id="comic-11">Absolute Wonder Woman #2</dt>
+            <dt><input type="checkbox" id="comic-12">Absolute Wonder Woman #3</dt>
+            <dt><input type="checkbox" id="comic-13">Absolute Wonder Woman #4</dt>
+            <dt><input type="checkbox" id="comic-14">Absolute Wonder Woman #5</dt>
+            <dt><input type="checkbox" id="comic-15">Absolute Wonder Woman #6</dt>
+            <dt><input type="checkbox" id="comic-16">Absolute Wonder Woman #7</dt>
+        </dl>
+    </div>
+
+    <!-- SUPERMAN VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33086-absolute-superman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Superman Vol. 1: Last Dust of Krypton</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-17">Absolute Superman #1</dt>
+            <dt><input type="checkbox" id="comic-18">Absolute Superman #2</dt>
+            <dt><input type="checkbox" id="comic-19">Absolute Superman #3</dt>
+            <dt><input type="checkbox" id="comic-20">Absolute Superman #4</dt>
+            <dt><input type="checkbox" id="comic-21">Absolute Superman #5</dt>
+            <dt><input type="checkbox" id="comic-22">Absolute Superman #6</dt>
+        </dl>
+    </div>
+
+    <!-- FLASH VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33390-absolute-flash-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Flash Vol. 1: Of Two Worlds</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-23">Absolute Flash #1</dt>
+            <dt><input type="checkbox" id="comic-24">Absolute Flash #2</dt>
+            <dt><input type="checkbox" id="comic-25">Absolute Flash #3</dt>
+            <dt><input type="checkbox" id="comic-26">Absolute Flash #4</dt>
+            <dt><input type="checkbox" id="comic-27">Absolute Flash #5</dt>
+            <dt><input type="checkbox" id="comic-28">Absolute Flash #6</dt>
+        </dl>
+    </div>
+
+    <!-- MARTIAN MANHUNTER VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33412-absolute-martian-manhunter-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Martian Manhunter Vol. 1: Martian Vision</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-29">Absolute Martian Manhunter #1</dt>
+            <dt><input type="checkbox" id="comic-30">Absolute Martian Manhunter #2</dt>
+            <dt><input type="checkbox" id="comic-31">Absolute Martian Manhunter #3</dt>
+            <dt><input type="checkbox" id="comic-32">Absolute Martian Manhunter #4</dt>
+            <dt><input type="checkbox" id="comic-33">Absolute Martian Manhunter #5</dt>
+            <dt><input type="checkbox" id="comic-34">Absolute Martian Manhunter #6</dt>
+        </dl>
+    </div>
+
+    <!-- GREEN LANTERN VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33443-absolute-green-lantern-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Green Lantern Vol. 1: Without Fear</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-35">Absolute Green Lantern #1</dt>
+            <dt><input type="checkbox" id="comic-36">Absolute Green Lantern #2</dt>
+            <dt><input type="checkbox" id="comic-37">Absolute Green Lantern #3</dt>
+            <dt><input type="checkbox" id="comic-38">Absolute Green Lantern #4</dt>
+            <dt><input type="checkbox" id="comic-39">Absolute Green Lantern #5</dt>
+            <dt><input type="checkbox" id="comic-40">Absolute Green Lantern #6</dt>
+        </dl>
+    </div>
+
+    <!-- BATMAN VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33051-absolute-batman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Batman Vol. 2: Abomination</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-41">Absolute Batman #7</dt>
+            <dt><input type="checkbox" id="comic-42">Absolute Batman #8</dt>
+            <dt><input type="checkbox" id="comic-43">Absolute Batman #9</dt>
+            <dt><input type="checkbox" id="comic-44">Absolute Batman #10</dt>
+            <dt><input type="checkbox" id="comic-45">Absolute Batman #11</dt>
+            <dt><input type="checkbox" id="comic-46">Absolute Batman #12</dt>
+            <dt><input type="checkbox" id="comic-47">Absolute Batman #13</dt>
+            <dt><input type="checkbox" id="comic-48">Absolute Batman #14</dt>
+        </dl>
+    </div>
+
+    <!-- WONDER WOMAN VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33091-absolute-wonder-woman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Wonder Woman Vol. 2: As My Mothers Made Me</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-49">Absolute Wonder Woman #8</dt>
+            <dt><input type="checkbox" id="comic-50">Absolute Wonder Woman #9</dt>
+            <dt><input type="checkbox" id="comic-51">Absolute Wonder Woman #10</dt>
+            <dt><input type="checkbox" id="comic-52">Absolute Wonder Woman #11</dt>
+            <dt><input type="checkbox" id="comic-53">Absolute Wonder Woman #12</dt>
+            <dt><input type="checkbox" id="comic-54">Absolute Wonder Woman #13</dt>
+            <dt><input type="checkbox" id="comic-55">Absolute Wonder Woman #14</dt>
+        </dl>
+    </div>
+
+    <!-- SUPERMAN VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33086-absolute-superman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Superman Vol. 2: Son of the Demon</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-56">Absolute Superman #7</dt>
+            <dt><input type="checkbox" id="comic-57">Absolute Superman #8</dt>
+            <dt><input type="checkbox" id="comic-58">Absolute Superman #9</dt>
+            <dt><input type="checkbox" id="comic-59">Absolute Superman #10</dt>
+            <dt><input type="checkbox" id="comic-60">Absolute Superman #11</dt>
+            <dt><input type="checkbox" id="comic-61">Absolute Superman #12</dt>
+            <dt><input type="checkbox" id="comic-62">Absolute Superman #13</dt>
+            <dt><input type="checkbox" id="comic-63">Absolute Superman #14</dt>
+        </dl>
+    </div>
+
+    <!-- FLASH VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33390-absolute-flash-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Flash Vol. 2: Still Point</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-64">Absolute Flash #7</dt>
+            <dt><input type="checkbox" id="comic-65">Absolute Flash #8</dt>
+            <dt><input type="checkbox" id="comic-66">Absolute Flash #9</dt>
+            <dt><input type="checkbox" id="comic-67">Absolute Flash #10</dt>
+            <dt><input type="checkbox" id="comic-68">Absolute Flash #11</dt>
+            <dt><input type="checkbox" id="comic-69">Absolute Flash #12</dt>
+        </dl>
+    </div>
+
+    <!-- GREEN LANTERN VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33443-absolute-green-lantern-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Green Lantern Vol. 2: Sojourner</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-70">Absolute Green Lantern #7</dt>
+            <dt><input type="checkbox" id="comic-71">Absolute Green Lantern #8</dt>
+            <dt><input type="checkbox" id="comic-72">Absolute Green Lantern #9</dt>
+            <dt><input type="checkbox" id="comic-73">Absolute Green Lantern #10</dt>
+            <dt><input type="checkbox" id="comic-74">Absolute Green Lantern #11</dt>
+            <dt><input type="checkbox" id="comic-75">Absolute Green Lantern #12</dt>
+        </dl>
+    </div>
+
+    <!-- MARTIAN MANHUNTER VOL. 2 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33412-absolute-martian-manhunter-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Martian Manhunter Vol. 2: The Agency</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-76">Absolute Martian Manhunter #7</dt>
+            <dt><input type="checkbox" id="comic-77">Absolute Martian Manhunter #8</dt>
+            <dt><input type="checkbox" id="comic-78">Absolute Martian Manhunter #9</dt>
+            <dt><input type="checkbox" id="comic-79">Absolute Martian Manhunter #10</dt>
+            <dt><input type="checkbox" id="comic-80">Absolute Martian Manhunter #11</dt>
+            <dt><input type="checkbox" id="comic-81">Absolute Martian Manhunter #12</dt>
+        </dl>
+    </div>
+
+    <!-- BATMAN VOL. 3 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33051-absolute-batman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Batman Vol. 3: Devil’s Workshop</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-82">Absolute Batman 2025 Annual #1</dt>
+            <dt><input type="checkbox" id="comic-83">Absolute Batman: Ark M #1</dt>
+            <dt><input type="checkbox" id="comic-84">Absolute Batman #15</dt>
+            <dt><input type="checkbox" id="comic-85">Absolute Batman #16 ( 1st Crossover 2/2 Read WW #15 first)</dt>
+            <dt><input type="checkbox" id="comic-86">Absolute Batman #17</dt>
+            <dt><input type="checkbox" id="comic-87">Absolute Batman #18</dt>
+        </dl>
+    </div>
+
+    <!-- WONDER WOMAN VOL. 3 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33091-absolute-wonder-woman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Wonder Woman Vol. 3: Season of the Witch</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-88">Absolute Wonder Woman #15 ( 1st Crossover 1/2 )</dt>
+            <dt><input type="checkbox" id="comic-89">Absolute Wonder Woman #16</dt>
+            <dt><input type="checkbox" id="comic-90">Absolute Wonder Woman #17</dt>
+            <dt><input type="checkbox" id="comic-91">Absolute Wonder Woman #18</dt>
+            <dt><input type="checkbox" id="comic-92">Absolute Wonder Woman #19</dt>
+            <dt><input type="checkbox" id="comic-93">Absolute Wonder Woman #20</dt>
+            <dt><input type="checkbox" id="comic-94">Absolute Wonder Woman 2026 Annual #1</dt>
+        </dl>
+    </div>
+
+    <!-- SUPERMAN VOL. 3 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33086-absolute-superman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Superman Vol. 3: The Neverending Begins</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-95">Absolute Superman #15</dt>
+            <dt><input type="checkbox" id="comic-96">Absolute Superman #16</dt>
+            <dt><input type="checkbox" id="comic-97">Absolute Superman #17</dt>
+            <dt><input type="checkbox" id="comic-98">Absolute Superman #18</dt>
+            <dt><input type="checkbox" id="comic-99">Absolute Superman #19</dt>
+            <dt><input type="checkbox" id="comic-100">Absolute Superman #20</dt>
+            <dt><input type="checkbox" id="comic-101">Absolute Superman #21</dt>
+        </dl>
+    </div>
+
+    <!-- GREEN LANTERN VOL. 3 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33443-absolute-green-lantern-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Green Lantern Vol. 3</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-102">Absolute Green Lantern #13</dt>
+            <dt><input type="checkbox" id="comic-103">Absolute Green Lantern #14</dt>
+            <dt><input type="checkbox" id="comic-104">Absolute Green Lantern #15</dt>
+            <dt><input type="checkbox" id="comic-105">Absolute Green Lantern #16</dt>
+            <dt><input type="checkbox" id="comic-106">Absolute Green Lantern #17</dt>
+        </dl>
+    </div>
+
+    <!-- FLASH VOL. 3 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33390-absolute-flash-2025.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Flash Vol. 3</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-107">Absolute Flash #13</dt>
+            <dt><input type="checkbox" id="comic-108">Absolute Flash #14</dt>
+            <dt><input type="checkbox" id="comic-109">Absolute Flash #15</dt>
+            <dt><input type="checkbox" id="comic-110">Absolute Flash #16</dt>
+            <dt><input type="checkbox" id="comic-111">Absolute Flash #17</dt>
+            <dt><input type="checkbox" id="comic-112">Absolute Flash #18</dt>
+        </dl>
+    </div>
+
+    <!-- BATMAN VOL. 4 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33051-absolute-batman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Batman Vol. 4: The Straw Man</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-113">Absolute Batman #19</dt>
+            <dt><input type="checkbox" id="comic-114">Absolute Batman #20</dt>
+            <dt><input type="checkbox" id="comic-115">Absolute Batman #21</dt>
+            <dt><input type="checkbox" id="comic-116">Absolute Batman #22</dt>
+            <dt><input type="checkbox" id="comic-117">Absolute Batman #23</dt>
+            <dt><input type="checkbox" id="comic-118">Absolute Batman #24</dt>
+            <dt><input type="checkbox" id="comic-119">Absolute Batman #25</dt>
+        </dl>
+    </div>
+
+    <!-- WONDER WOMAN VOL. 4 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/33091-absolute-wonder-woman-2024.html#chapters" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Wonder Woman Vol. 4: Heretic</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-120">Absolute Wonder Woman #21</dt>
+            <dt><input type="checkbox" id="comic-121">Absolute Wonder Woman #22</dt>
+            <dt><input type="checkbox" id="comic-122">Absolute Wonder Woman #23</dt>
+            <dt><input type="checkbox" id="comic-123">Absolute Wonder Woman #24</dt>
+            <dt><input type="checkbox" id="comic-124">Absolute Wonder Woman #25</dt>
+            <dt><input type="checkbox" id="comic-125">Absolute Wonder Woman #26</dt>
+        </dl>
+    </div>
+
+    <!-- GREEN ARROW VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/35117-absolute-green-arrow-2026.html" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Green Arrow Vol. 1: The Longbow Killer</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-126">Absolute Green Arrow #1</dt>
+            <dt><input type="checkbox" id="comic-127">Absolute Green Arrow #2</dt>
+            <dt><input type="checkbox" id="comic-128">Absolute Green Arrow #3</dt>
+            <dt><input type="checkbox" id="comic-129">Absolute Green Arrow #4</dt>
+            <dt><input type="checkbox" id="comic-130">Absolute Green Arrow #5</dt>
+            <dt><input type="checkbox" id="comic-131">Absolute Green Arrow #6</dt>
+        </dl>
+    </div>
+
+    <!-- CATWOMAN VOL. 1 -->
+    <div class="section">
+        <h2><a href="https://batcave.biz/37029-absolute-catwoman-2026.html" target="_blank" rel="noopener noreferrer" style="color: #DC3D46; text-decoration: none;">Absolute Catwoman: The Yarn</a></h2>
+        <dl>
+            <dt><input type="checkbox" id="comic-132">Absolute Catwoman #1</dt>
+            <dt><input type="checkbox" id="comic-133">Absolute Catwoman #2</dt>
+            <dt><input type="checkbox" id="comic-134">Absolute Catwoman #3</dt>
+            <dt><input type="checkbox" id="comic-135">Absolute Catwoman #4</dt>
+            <dt><input type="checkbox" id="comic-136">Absolute Catwoman #5</dt>
+            <dt><input type="checkbox" id="comic-137">Absolute Catwoman #6</dt>
+            <dt><input type="checkbox" id="comic-138">Absolute Cassandra Cain: The Shadow’s Hand #1</dt>
+        </dl>
+    </div>
+
+    <footer>
         <strong>Sources Used:</strong><br>
-        https://www.readingorders.com/reading-orders/absolute-universe<br>
+        <a href="https://www.comicbookherald.com/reading-dc-comics/dc-absolute-universe-reading-order/" style="color:#8A8D93;" target="_blank" rel="noopener noreferrer">Comic Book Herald DC Absolute Universe Reading Order</a><br>
     </footer>
 
     <!-- Checkbox Saving Script -->
@@ -88,4 +484,7 @@
             });
         }
     </script>
+
 </body>
+
+</html>
